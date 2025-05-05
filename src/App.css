@@ -14,9 +14,9 @@
     display: flex;
     justify-content: space-between; /* Distribuisce logo e voci */
     align-items: center; /* Centra verticalmente */
-    background-color: #282c34;
+    background-color: #ffffff;
     padding: 1rem 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 100%; /* Fa occupare tutta la larghezza */
     height: 100px;
     font-size: small;
@@ -58,11 +58,32 @@
 
   /*inizio main*/
 
-  .container{
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-  }
+  .container-main {
+   margin: 0 auto;
+    background-color: #000000;
+    height: 100px; /* Imposta una altezza maggiore per renderla visibile */
+    width: 1200px;
+    margin-top: 0px; /* Distanza dalla navbar */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+
+
+}
+
+.container-espansione{
+    width: 100%;
+    background-color: black;
+}
+
+.container-pagina{
+    margin: 0 auto;
+    
+    width: 1200px;
+  
+}
+
 
   
   
