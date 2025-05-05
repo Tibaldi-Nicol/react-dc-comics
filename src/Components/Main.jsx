@@ -1,5 +1,10 @@
 import foto1 from "../assets/img/buy-comics-digital-comics.png";
 import foto2 from "../assets/img/buy-comics-merchandise.png";
+import foto3 from "../assets/img/buy-comics-shop-locator.png";
+import foto4 from "../assets/img/buy-comics-subscriptions.png";
+import foto5 from "../assets/img/buy-dc-power-visa.svg";  
+
+
 
 function Main() {
     return (
@@ -25,25 +30,25 @@ function Main() {
 
 
 
-                        <li className="navLinks-card-2"> <img src={foto2} alt="" />
+                        <li className="navLinks-card-2"> <img src={foto2} alt="" /> <span>DC MERCHANDISE</span>
 
                         </li>
 
 
 
-                        <li className="navLinks-card-3">
+                        <li className="navLinks-card-3"><img src={foto3} alt="" /><span>SUBSCRIPTION</span>
                             
 
                         </li>
 
 
-                        <li className="navLinks-card-4">
+                        <li className="navLinks-card-4"><img src={foto4} alt="" /><span>COMIC SHOP LOCATOR</span>
 
                         </li>
 
 
 
-                        <li className="navLinks-card-5">
+                        <li className="navLinks-card-5"><img src={foto5} alt="" /><span>DC POWER</span>
 
                         </li>
 
