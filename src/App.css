@@ -204,7 +204,7 @@
     width: 100%;
     height: 500px;
     display: flex;
-    padding-right: 300px;
+    
     justify-content: right;
     align-items: center;
 }
@@ -216,8 +216,80 @@
     background-size: contain;
     background-repeat: no-repeat;
     
+    
+}
+
+.container-footer{
+    width: 100%;
+    max-width: 1200px; /* Mantiene il rettangolo nero più largo */
+    margin: 0 auto;
+    background-color: transparent;
+    height: 500px; /* Imposta una altezza maggiore per renderla visibile */
+    display: flex;
+    justify-content: left;
+    
+  
+
 }
 
 
+.Container-espansione-3{
+    background-image: url(../src/assets/img/footer-bg.jpg);
+ 
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer-links-container {
+    display: flex; /* Disponi le colonne in orizzontale */
+    color: #ccc; /* Colore del testo principale */
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 20px; /* Aggiungi un po' di spazio interno */
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    margin-right: 50px; /* Spazio tra le colonne */
+  }
+  
+  .footer-column:last-child {
+    margin-right: 0; /* Rimuovi il margine destro dall'ultima colonna */
+  }
+  
+  .footer-column h3 {
+    color: white; /* Colore dei titoli */
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Rendi il testo in grassetto */
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #ccc;
+  }
+  
+  .footer-column a:hover {
+    color: white; /* Cambia colore al passaggio del mouse */
+  }
+  
+  .shop-column h3 {
+    margin-top: 20px; /* Aggiunge spazio sopra il titolo SHOP */
+  }
+  
+  .shop-column ul {
+    margin-top: 10px; /* Aggiunge spazio sopra la lista SHOP */
+  }
   
   
