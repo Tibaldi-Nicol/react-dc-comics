@@ -242,27 +242,27 @@
 
 
 .footer-links-container {
-    display: flex; /* Disponi le colonne in orizzontale */
-    color: #ccc; /* Colore del testo principale */
+    display: flex; 
+    color: #ccc; 
     font-family: sans-serif;
     font-size: 10px;
-    padding: 20px; /* Aggiungi un po' di spazio interno */
+    padding: 20px; 
     flex-wrap: wrap;
   }
   
   .footer-column {
-    margin-right: 50px; /* Spazio tra le colonne */
+    margin-right: 50px; 
   }
   
   .footer-column:last-child {
-    margin-right: 0; /* Rimuovi il margine destro dall'ultima colonna */
+    margin-right: 0;
   }
   
   .footer-column h3 {
-    color: white; /* Colore dei titoli */
+    color: white; 
     font-size: 16px;
     margin-bottom: 10px;
-    font-weight: bold; /* Rendi il testo in grassetto */
+    font-weight: bold; 
   }
   
   .footer-column ul {
@@ -291,5 +291,37 @@
   .shop-column ul {
     margin-top: 10px; /* Aggiunge spazio sopra la lista SHOP */
   }
-  
+
+  footer{
+    background-color: #3a3f47;
+
+    width: 100%;
+    max-width: 1200px; /* Mantiene il rettangolo nero più largo */
+    margin: 0 auto;
+
+    height: 130px; /* Imposta una altezza maggiore per renderla visibile */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: relative;
+    z-index: 2;
+  }
+
+  .footer-espansione{
+    width: 100%;
+    background-color: #3a3f47;
+    height: 100%;
+  }
+
+  .Pulsante{
+    background-color: transparent;
+    padding: 8px 16px;
+    color: white;
+    border: 1px solid #0080f7;
+  }
+  .FOLLOW{
+    color: #0080f7;
+    
+  }
   

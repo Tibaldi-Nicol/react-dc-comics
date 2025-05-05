@@ -2,6 +2,7 @@ import logo from "../assets/img/dc-logo.png";
 
 function Navbar() {
   return (
+    <div className="container-pagina">
     <nav className="navbar">
       <div className="logo">
         <img src={logo} alt="DC Logo" />
@@ -19,6 +20,7 @@ function Navbar() {
         <li>SHOP</li>
       </ul>
     </nav>
+    </div>
   );
 }
 
