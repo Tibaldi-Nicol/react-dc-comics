@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vh;
+    height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuisce logo e voci */
+    align-items: center; /* Centra verticalmente */
+    background-color: #282c34;
+    padding: 1rem 2rem;
+    color: white;
+    width: 100%; /* Fa occupare tutta la larghezza */
+    height: 100px;
+    font-size: small;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Logo a sinistra */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  /* Menu di navigazione */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
   }
-}
+  
+  /* Assicura che i link non siano troppo compressi */
+  .nav-links li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  /*cambio colore di sfondo quando il mouse ci passa sopra*/
+  .nav-links li:hover {
+    background-color: #3a3f47;
+  /*sistemo il logo per farlo rientrare nella navbar*/
+  }
+  .logo img {
+    width: 80px; /* Imposta la larghezza */
+    height: auto; /* Mantiene le proporzioni corrette */
+  }
+  
 
-.card {
-  padding: 2em;
-}
+  /*fine Navbar*/
 
-.read-the-docs {
-  color: #888;
-}
+  /*inizio main*/
+
+  .container{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+  }
+
+  
+  
