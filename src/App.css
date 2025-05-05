@@ -104,7 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 130px;
 }
 
 /* Quadrati rossi */
@@ -123,9 +123,79 @@
     
     
 }
+.navLinks-card-2{
+    gap: 10px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: small;
+
+    
+    
+}.navLinks-card-3{
+    gap: 10px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: small;
+
+    
+    
+}.navLinks-card-4{
+    gap: 10px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: small;
+
+    
+    
+}.navLinks-card-5{
+    gap: 10px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: small;
+
+    
+    
+}
 .navLinks-card-1 img{
     width: 30px;
 }
+.navLinks-card-2 img{
+    width: 30px;
+}
+.navLinks-card-3 img{
+    width: 25px;
+}
+.navLinks-card-4 img{
+    width: 30px;
+}
+.navLinks-card-5 img{
+    width: 30px;
+}
+
 
 
 
