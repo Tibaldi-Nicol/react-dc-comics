@@ -1,31 +1,36 @@
-
-/* CSS Reset */
-* {
+/* ====================================
+   RESET CSS GENERALE
+   ==================================== */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
 
-/* Contenitore generale */
+/* ====================================
+   LAYOUT CONTAINER PRINCIPALE
+   ==================================== */
 .container {
     width: 100%;
     min-height: 100vh;
 }
 
-/* Navbar dentro container-pagina per restringerla */
 .container-pagina {
     margin: 0 auto;
-    width: 1200px; /* Restringe la navbar */
+    width: 1200px; /* Larghezza massima contenuto */
 }
 
+/* ====================================
+   STILI NAVBAR
+   ==================================== */
 .navbar {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Distribuisce logo e voci */
-    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Posiziona logo a sinistra e menu a destra */
+    align-items: center; /* Allineamento verticale al centro */
     background-color: #ffffff;
     padding: 1rem 2rem;
     color: rgb(0, 0, 0);
@@ -33,18 +38,18 @@
     font-size: small;
 }
 
-/* Logo a sinistra */
+/* Logo nella navbar */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 .logo img {
-    width: 80px; /* Imposta la larghezza */
-    height: auto; /* Mantiene le proporzioni corrette */
+    width: 80px;
+    height: auto; /* Mantiene proporzioni corrette */
 }
 
-/* Menu di navigazione */
+/* Menu di navigazione principale */
 .nav-links {
     display: flex;
     gap: 1rem;
@@ -55,273 +60,218 @@
 .nav-links li {
     cursor: pointer;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Animazione hover */
 }
 
 .nav-links li:hover {
     background-color: #3a3f47;
 }
 
-/* Fine Navbar */
-.container-espansione{
+/* ====================================
+   SEZIONE NERA A PIENA LARGHEZZA
+   ==================================== */
+.container-espansione {
     width: 100%;
     background-color: black;
 }
 
-/* Inizio Main */
 .container-main {
     width: 100%;
-    max-width: 1200px; /* Mantiene il rettangolo nero più largo */
+    max-width: 1200px;
     margin: 0 auto;
     background-color: #000000;
-    height: 100px; /* Imposta una altezza maggiore per renderla visibile */
+    height: 100px;
     display: flex;
     justify-content: left;
     align-items: center;
     color: white;
 }
 
-/* Espansione della seconda sezione */
+/* ====================================
+   SEZIONE BLU CON ICONE
+   ==================================== */
 .container-espansione-2 {
     background-color: #0080f7;
     width: 100%;
-    
 }
 
-/* Contenitore dei quadrati */
+/* Contenitore delle icone con testo */
 .container-main-2 {
-    display: flex; /* Dispone gli elementi in orizzontale */
-    justify-content: center; /* Centra i quadrati dentro il rettangolo */
-    align-items: center; /* Allinea verticalmente */
-    gap: 20px; /* Aggiunge spazio tra i quadrati */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     background-color: #0080f7;
     width: 100%;
     height: 100px; 
 }
 
-/* Disposizione orizzontale dei quadrati */
+/* Disposizione menu orizzontale */
 .container-main-2 ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 130px;
+    gap: 130px; /* Spazio tra le icone */
 }
 
-/* Quadrati rossi */
-.navLinks-card-1{
+/* ====================================
+   STILI CARTE NAVIGAZIONE
+   ==================================== */
+/* Stile base comune per tutte le carte di navigazione */
+.navLinks-card-1,
+.navLinks-card-2,
+.navLinks-card-3,
+.navLinks-card-4,
+.navLinks-card-5 {
     gap: 10px;
     height: 40px;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-   color: white;
+    color: white;
     background-size: cover;
     background-repeat: no-repeat;
     font-size: small;
+}
 
-    
-    
-}
-.navLinks-card-2{
-    gap: 10px;
-    height: 40px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: small;
-
-    
-    
-}.navLinks-card-3{
-    gap: 10px;
-    height: 40px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: small;
-
-    
-    
-}.navLinks-card-4{
-    gap: 10px;
-    height: 40px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: small;
-
-    
-    
-}.navLinks-card-5{
-    gap: 10px;
-    height: 40px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: small;
-
-    
-    
-}
-.navLinks-card-1 img{
-    width: 30px;
-}
-.navLinks-card-2 img{
-    width: 30px;
-}
-.navLinks-card-3 img{
-    width: 25px;
-}
-.navLinks-card-4 img{
-    width: 30px;
-}
-.navLinks-card-5 img{
+/* Dimensioni icone per ogni carta */
+.navLinks-card-1 img,
+.navLinks-card-2 img,
+.navLinks-card-4 img,
+.navLinks-card-5 img {
     width: 30px;
 }
 
+.navLinks-card-3 img {
+    width: 25px; /* Dimensione leggermente diversa */
+}
 
-/*inizio footer*/
-
-.Footer-image{
+/* ====================================
+   STILI FOOTER
+   ==================================== */
+/* Contenitore espansione footer con immagine di sfondo */
+.Container-espansione-3 {
     background-image: url(../src/assets/img/footer-bg.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+/* Contenitore principale del footer */
+.container-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+    height: 500px;
+    display: flex;
+    justify-content: left;
+}
+
+/* Immagine di sfondo nel footer */
+.Footer-image {
+    background-image: url();
     width: 100%;
     height: 500px;
     display: flex;
-    
     justify-content: right;
     align-items: center;
 }
 
-.Footer-logo{
+/* Logo grande nel footer */
+.Footer-logo {
     background-image: url(../src/assets/img/dc-logo-bg.png);
     width: 600px;
     height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
-    
-    
 }
 
-.container-footer{
-    width: 100%;
-    max-width: 1200px; /* Mantiene il rettangolo nero più largo */
-    margin: 0 auto;
-    background-color: transparent;
-    height: 500px; /* Imposta una altezza maggiore per renderla visibile */
-    display: flex;
-    justify-content: left;
-    
-  
-
-}
-
-
-.Container-espansione-3{
-    background-image: url(../src/assets/img/footer-bg.jpg);
- 
-    width: 100%;
-    height: 100%;
-}
-
-
+/* ====================================
+   STILI LINKS NELLE COLONNE DEL FOOTER
+   ==================================== */
 .footer-links-container {
-    display: flex; 
-    color: #ccc; 
+    display: flex;
+    color: #ccc;
     font-family: sans-serif;
     font-size: 10px;
-    padding: 20px; 
+    padding: 20px;
     flex-wrap: wrap;
-  }
-  
-  .footer-column {
-    margin-right: 50px; 
-  }
-  
-  .footer-column:last-child {
-    margin-right: 0;
-  }
-  
-  .footer-column h3 {
-    color: white; 
+}
+
+.footer-column {
+    margin-right: 50px;
+}
+
+.footer-column:last-child {
+    margin-right: 0; /* Elimina margine destro all'ultima colonna */
+}
+
+.footer-column h3 {
+    color: white;
     font-size: 16px;
     margin-bottom: 10px;
-    font-weight: bold; 
-  }
-  
-  .footer-column ul {
+    font-weight: bold;
+}
+
+.footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .footer-column li {
+}
+
+.footer-column li {
     margin-bottom: 5px;
-  }
-  
-  .footer-column a {
+}
+
+.footer-column a {
     text-decoration: none;
     color: #ccc;
-  }
-  
-  .footer-column a:hover {
-    color: white; /* Cambia colore al passaggio del mouse */
-  }
-  
-  .shop-column h3 {
-    margin-top: 20px; /* Aggiunge spazio sopra il titolo SHOP */
-  }
-  
-  .shop-column ul {
-    margin-top: 10px; /* Aggiunge spazio sopra la lista SHOP */
-  }
+}
 
-  footer{
-    background-color: #3a3f47;
+.footer-column a:hover {
+    color: white; /* Effetto hover sui link */
+}
 
-    width: 100%;
-    max-width: 1200px; /* Mantiene il rettangolo nero più largo */
-    margin: 0 auto;
+/* Stile speciale per colonna shop */
+.shop-column h3 {
+    margin-top: 20px;
+}
 
-    height: 130px; /* Imposta una altezza maggiore per renderla visibile */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    position: relative;
-    z-index: 2;
-  }
+.shop-column ul {
+    margin-top: 10px;
+}
 
-  .footer-espansione{
+/* ====================================
+   SEZIONE BOTTOM FOOTER
+   ==================================== */
+.footer-espansione {
     width: 100%;
     background-color: #3a3f47;
     height: 100%;
-  }
+}
 
-  .Pulsante{
+footer {
+    background-color: #3a3f47;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Stili pulsante e testo "FOLLOW" */
+.Pulsante {
     background-color: transparent;
     padding: 8px 16px;
     color: white;
     border: 1px solid #0080f7;
-  }
-  .FOLLOW{
+}
+
+.FOLLOW {
     color: #0080f7;
-    
-  }
-  
+}
