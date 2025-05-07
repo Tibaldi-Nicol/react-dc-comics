@@ -82,7 +82,7 @@ function Navbar() {
         </ul>
       </nav>
 
-      {/* Jumbotron sotto la navbar */}
+      {/* Jumbotron sotto la navbar preso d google*/}
       <div className="jumbotron">
         <div className='button-series'>
           <a className='Buttons' href="">Current Series</a>
