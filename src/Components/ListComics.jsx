@@ -157,7 +157,9 @@ const ListComics = () => {
   ];
   return (
 
-    <div>ListComics</div>
+    <div>ListComics
+      <ComicCard></ComicCard>
+    </div>
    
   );
 };
