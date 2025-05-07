@@ -80,7 +80,7 @@
     max-width: 1200px;
     margin: 0 auto;
     background-color: #000000;
-    height: 100px;
+   
     display: flex;
     justify-content: left;
     align-items: center;
@@ -275,3 +275,4 @@ footer {
 .FOLLOW {
     color: #0080f7;
 }
+

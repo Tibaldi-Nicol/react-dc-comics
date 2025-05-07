@@ -3,6 +3,7 @@ import foto2 from "../assets/img/buy-comics-merchandise.png";
 import foto3 from "../assets/img/buy-comics-shop-locator.png";
 import foto4 from "../assets/img/buy-comics-subscriptions.png";
 import foto5 from "../assets/img/buy-dc-power-visa.svg";  
+import ListComics from "./ListComics";
 
 
 
@@ -12,7 +13,8 @@ function Main() {
             {/* Prima sezione espansione */}
             <div className="container-espansione">
                 <div className="container-main">
-                    <h5>--Content goes here--</h5>
+               
+                   
                 </div>
             </div>
 

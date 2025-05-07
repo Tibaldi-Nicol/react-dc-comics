@@ -1,9 +1,6 @@
-import React from 'react';
-import ComicCard from './ComicCard';
-import './ListComics.css';
+import React from 'react'
 
-function ListComics() {
-  // Array con i dati dei fumetti
+const ListComics = () => {
   const comics = [
     {
       id: 1,
@@ -52,7 +49,7 @@ function ListComics() {
     {
       id: 4,
       title: "Batgirl #1",
-      description: ""Beyond Burnside" Chapter One: The Batgirl you know and love is going global with Eisner Award-winning and New York Times best-selling writer Hope Larson (A Wrinkle in Time, Goldie Vance) and all-star artist Rafael Albuquerque (AMERICAN VAMPIRE). In order to up her game, Babs travels to Japan on a quest to train with the most elite modern combat masters of the East. But when a chance meeting with an old friend puts a target on her back, Batgirl may need to use her new skills to solve a deadly mystery." ,
+      description: "“Beyond Burnside” Chapter One: The Batgirl you know and love is going global with Eisner Award-winning and New York Times best-selling writer Hope Larson (A Wrinkle in Time, Goldie Vance) and all-star artist Rafael Albuquerque (AMERICAN VAMPIRE). In order to up her game, Babs travels to Japan on a quest to train with the most elite modern combat masters of the East. But when a chance meeting with an old friend puts a target on her back, Batgirl may need to use her new skills to solve a deadly mystery.",
       thumb: "https://imgs.search.brave.com/YET9wY29Aa29TyHqlbieS9qsz3HWyNYQx-WkRqdBRX4/rs:fit:640:984:1/g:ce/aHR0cDovL2dldHlv/dXJjb21pY29uLmNv/LnVrL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzA4L2JhdGdp/cmwtcmViaXJ0aC0x/LWNvdmVyLmpwZw",
       price: "$2.99",
       series: "Batgirl",
@@ -76,7 +73,7 @@ function ListComics() {
     {
       id: 6,
       title: "Batman Beyond #1",
-      description: ""THE RETURN" part one! Terry McGinnis is back as Batman, much to the delight of his family and friends. But is the original Joker really back as well? Inspired by the possible return of their role model, the Jokerz have taken over an entire section of Gotham City and are determined to wreak havoc in the still-rebuilding city. While Batman battles chaos on the streets, his friend Dana is at the mercy of the new leader of the now-unified gang.",
+      description: "“THE RETURN” part one! Terry McGinnis is back as Batman, much to the delight of his family and friends. But is the original Joker really back as well? Inspired by the possible return of their role model, the Jokerz have taken over an entire section of Gotham City and are determined to wreak havoc in the still-rebuilding city. While Batman battles chaos on the streets, his friend Dana is at the mercy of the new leader of the now-unified gang.",
       thumb: "https://imgs.search.brave.com/jgxYlrx442aozemzjqdmCsd9DkIkRollJp1T8sG8TfE/rs:fit:720:1106:1/g:ce/aHR0cHM6Ly9veXN0/ZXIuaWduaW1ncy5j/b20vd29yZHByZXNz/L3N0Zy5pZ24uY29t/LzIwMTgvMTAvU1RM/MDk3MDk1LTcyMHgx/MTA2LmpwZw",
       price: "$2.99",
       series: "Batman Beyond",
@@ -100,7 +97,7 @@ function ListComics() {
     {
       id: 8,
       title: "Batman/Superman Annual #1",
-      description: "On a dark and stormy night in the fifth dimension, two mortal foes meet to settle an age-old question once and for all: In a fight between Batman and Superman, who would win? The combatants? Mr. Mxyzptlk and Bat-Mite. And in this battle for the ages, you will find out if a fifth-dimensional imp can bleed. It's all in this, the ultimate slugfest between the Dark Knight and the Man of Steel-plus a whole lot of magic!",
+      description: "On a dark and stormy night in the fifth dimension, two mortal foes meet to settle an age-old question once and for all: In a fight between Batman and Superman, who would win? The combatants? Mr. Mxyzptlk and Bat-Mite. And in this battle for the ages, you will find out if a fifth-dimensional imp can bleed. It’s all in this, the ultimate slugfest between the Dark Knight and the Man of Steel-plus a whole lot of magic!",
       thumb: "https://imgs.search.brave.com/jfaQd--WUx7RG8MiQ-VyCOqLUJW19ojBnjkNOG81rL4/rs:fit:666:1024:1/g:ce/aHR0cHM6Ly90aGVn/d3cuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzA5L0Jh/dG1hbi1TdXBlcm1h/bi1Bbm51YWwtQ3Yx/LTY2NngxMDI0Lmpw/Zw",
       price: "$4.99",
       series: "Batman/Superman Annual",
@@ -112,7 +109,7 @@ function ListComics() {
     {
       id: 9,
       title: "Batman: The Joker War Zone #1",
-      description: "Gotham City is a battleground as The Joker takes over the Wayne fortune and wages a street war against the Dark Knight and his allies! Enter the "war zone" with short stories featuring characters like Cassandra Cain, Stephanie Brown, and Luke Fox and see how they're fighting back in a city under siege! Also, the brutal full debut of the mysterious new anti-hero known as Clownhunter!",
+      description: "Gotham City is a battleground as The Joker takes over the Wayne fortune and wages a street war against the Dark Knight and his allies! Enter the “war zone” with short stories featuring characters like Cassandra Cain, Stephanie Brown, and Luke Fox and see how they’re fighting back in a city under siege! Also, the brutal full debut of the mysterious new anti-hero known as Clownhunter!",
       thumb: "https://imgs.search.brave.com/kSLCPBIeE9s218LRC4cIyrHOYmxrSS2Wt7LvNNfED2I/rs:fit:455:700:1/g:ce/aHR0cHM6Ly9jb21p/Y2Jvb2tyZWFsbS5j/b20vY292ZXItc2Nh/bi81ZmFmMTFjYTk1/NGQ1MGVjZDA1ZmU3/M2U1NjBiNWQyOC94/bC8tLWlzc3VlLTEu/anBn",
       price: "$5.99",
       series: "Batman: The Joker War Zone",
@@ -156,19 +153,19 @@ function ListComics() {
       type: "graphic novel",
       artists: ["Fernando Blanco", "Joëlle Jones"],
       writers: ["Joëlle Jones"],
-    }
+    },
   ];
-
   return (
-    <div className="comics-container">
-      <h2 className="comics-title">CURRENT SERIES</h2>
-      <div className="comics-list">
-        {comics.map((comic) => (
-          <ComicCard key={comic.id} comic={comic} />
-        ))}
-      </div>
-    </div>
+
+    <div>ListComics</div>
+   
   );
-}
+};
 
 export default ListComics;
+
+
+
+
+
+
