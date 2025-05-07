@@ -1,16 +1,18 @@
-import React from 'react'
+// ComicCard.jsx
+import React from "react";
 
-const ComicCard = () => {
+const ComicCard = ({ title, image }) => {
   return (
-    <div>
-      
+    <div className="comic-card">
+      <img src={image} alt={title} />
+      <div className="card-info">
+        <h2>{title}</h2>
+        
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default ComicCard;
 
 
-
-
-  

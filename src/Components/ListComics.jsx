@@ -1,7 +1,8 @@
-import React from 'react'
+//qui ci mettto la card ComicCard
+import ComicCard from "./ComicCard";
+import React from "react";
 
-const ListComics = () => {
-  const comics = [
+const comics = [
     {
       id: 1,
       title: "Action Comics #1000: The Deluxe Edition",
@@ -155,19 +156,22 @@ const ListComics = () => {
       writers: ["Joëlle Jones"],
     },
   ];
-  return (
-
-    <div>ListComics
-      <ComicCard></ComicCard>
-    </div>
-   
-  );
-};
-
-export default ListComics;
-
-
-
-
-
-
+  const ListComics = () => {
+    return (
+      <div className="comics-list">
+        {comics.map((comic) => (
+          <ComicCard
+            key={comic.id}
+            title={comic.title}
+            image={comic.thumb}
+            //description={comic.description}
+            //series={comic.series}
+           // price={comic.price}
+            //sale_date={comic.sale_date}
+          />
+        ))}
+      </div>
+    );
+  };
+  
+  export default ListComics;
