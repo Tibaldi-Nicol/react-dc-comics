@@ -8,6 +8,7 @@ const ComicCard = ({ title, image }) => {
       <div className="card-info">
         <h2>{title}</h2>
         
+        
       </div>
     </div>
   );
